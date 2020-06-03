@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const PageError = () => (
@@ -8,6 +9,7 @@ const PageError = () => (
     <main role="main" className="Dashboard">
       <p>View Dashboard</p>
     </main>
+    <Footer />
   </div>
 );
 

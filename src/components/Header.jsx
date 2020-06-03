@@ -8,13 +8,13 @@ const Header = () => (
         <Link to="/">
             <img src={ImgLogo} alt="Logo de Dashboard Products" />
         </Link>
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="btn-group">
+            <button type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mi name
             </button>
-            <div class="dropdown-menu dropdown-menu-right">
-                <button class="dropdown-item" type="button">Ver catálogo</button>
-                <button class="dropdown-item" type="button">Cerrar sesión</button>
+            <div className="dropdown-menu dropdown-menu-right">
+                <button className="dropdown-item" type="button">Ver catálogo</button>
+                <button className="dropdown-item" type="button">Cerrar sesión</button>
             </div>
         </div>
     </header>
