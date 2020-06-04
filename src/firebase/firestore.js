@@ -1,8 +1,8 @@
-import { firestore } from '../firebase/firebase-config';
+import { firestore } from './firebase-config';
 
 
 export const getProducts = () => {
-    return firestore.collection('products').get()
+    return firestore.collection('products').orderBy('date', 'desc').get()
         .then((response) => {
             const arrayProduct = [];
 
@@ -14,7 +14,13 @@ export const getProducts = () => {
 
                 arrayProduct.push(product);
             });
-            console.log(arrayProduct);
+
             return arrayProduct;
         })
 };
+
+
+export const addProduct = product => firestore.collection('products').add(product);
+
+
+export const deleteProduct = idProduct => firestore.collection('products').doc(idProduct).delete();

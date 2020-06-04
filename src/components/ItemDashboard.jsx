@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-const ItemDashboard = ({ product, index }) => {
+const ItemDashboard = ({ product, index, productDeleteList }) => {
     return (
         <tr>
             <th scope="row">{index + 1}</th>
             <td>{product.name}</td>
             <td>{product.price}</td>
-            <td>IMG</td>
-            <td><button>Editar</button><button>Eliminar</button></td>
+            <td>{product.id}</td>
+            <td><button>Editar</button><button onClick={() => productDeleteList(product)}>Eliminar</button></td>
         </tr>
     );
 }
