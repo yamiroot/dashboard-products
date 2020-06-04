@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dashboard-products/static/css/main.dcfa2896.chunk.css",
+    "main.js": "/dashboard-products/static/js/main.da91503a.chunk.js",
+    "main.js.map": "/dashboard-products/static/js/main.da91503a.chunk.js.map",
+    "runtime-main.js": "/dashboard-products/static/js/runtime-main.e38bda1b.js",
+    "runtime-main.js.map": "/dashboard-products/static/js/runtime-main.e38bda1b.js.map",
+    "static/js/2.0d88a22e.chunk.js": "/dashboard-products/static/js/2.0d88a22e.chunk.js",
+    "static/js/2.0d88a22e.chunk.js.map": "/dashboard-products/static/js/2.0d88a22e.chunk.js.map",
+    "index.html": "/dashboard-products/index.html",
+    "precache-manifest.4db4a5ae06e83219556330f8533ffcdb.js": "/dashboard-products/precache-manifest.4db4a5ae06e83219556330f8533ffcdb.js",
+    "service-worker.js": "/dashboard-products/service-worker.js",
+    "static/css/main.dcfa2896.chunk.css.map": "/dashboard-products/static/css/main.dcfa2896.chunk.css.map",
+    "static/js/2.0d88a22e.chunk.js.LICENSE.txt": "/dashboard-products/static/js/2.0d88a22e.chunk.js.LICENSE.txt",
+    "static/media/logotext.png": "/dashboard-products/static/media/logotext.875414f9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e38bda1b.js",
+    "static/js/2.0d88a22e.chunk.js",
+    "static/css/main.dcfa2896.chunk.css",
+    "static/js/main.da91503a.chunk.js"
+  ]
+}
