@@ -1,0 +1,33 @@
+@import '_measures';
+
+
+@mixin style($padding, $size) {
+    padding: $padding;
+    margin: 0;
+    font-family: 'Dekko', cursive;
+    font-family: 'Neucha', cursive;
+    font-size: $size;
+    background: #8566aa;
+}
+
+
+footer {
+    @media (max-width: $blackberry) {
+        @include style(5px 6% 2px 6%, 15px);
+    }
+    @media (min-width: $blackberry) and (max-width: $smartphone) {
+        @include style(6px 8% 3px 8%, 17px);
+    }
+    @media (min-width: $smartphone) and (max-width: $tablet) {
+        @include style(7px 10% 4px 10%, 19px);
+    }
+    @media (min-width: $tablet) and (max-width: $notebook) {
+        @include style(8px 12% 5px 12%, 20px);
+    }
+    @media (min-width: $notebook) and (max-width: $desktop) {
+        @include style(9px 14% 6px 14%, 21px);
+    }
+    @media (min-width: $desktop) {
+        @include style(10px 16% 6px 16%, 22px);
+    }
+}

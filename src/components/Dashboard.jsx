@@ -55,11 +55,14 @@ const Dashboard = () => {
 
 
   return (
-    <div data-testid="view-dashboard">
+    <div id="view-dashboard">
       <Header />
       <main role="main" className="Dashboard">
-        <p>View Dashboard</p>
-        <button type="button" onClick={() => setModalShow(true)}>Agregar producto</button>
+        <h1 className="text-center">Registro de productos</h1>
+        <div id="div-total-products">
+          <p>Total productos:  {products.length}</p>
+          <button type="button" className="btn btn-lg button-add" onClick={() => setModalShow(true)}>Agregar producto</button>
+        </div>
         {
           (modalShow) && <ModalAddProduct
           show={modalShow}

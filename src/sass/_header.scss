@@ -1,0 +1,129 @@
+@import '_measures';
+
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin link($marginLeft, $marginRigth) {
+    margin-left: $marginLeft;
+    margin-right: $marginRigth;
+    outline: none;
+}
+
+@mixin button($marginRight, $fontSize) {
+    color: black;
+    margin-right: $marginRight;
+    font-family: 'Dekko', cursive;
+    font-family: 'Neucha', cursive;
+    font-size: $fontSize;
+    outline: none;
+}
+
+
+header {    
+    background: #8ec6c5;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        outline: none;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+
+    .div-button {
+        float: right;
+    }
+
+    @media (max-width: $blackberry) {
+        @include size(100%, 75px);
+
+        img {   
+            @include size(70%, 45px);
+            margin-left: 20px;
+        }
+  
+        button[type="button"] {
+            @include size(90%, 40px);
+            @include button(20px, 10px);
+        }
+    }
+
+    @media (min-width: $blackberry) and (max-width: $smartphone) {
+        @include size(100%, 80px);
+
+        img {   
+            @include size(90%, 47px);
+            margin-left: 22px;
+        }
+  
+        button[type="button"] {
+            @include size(93%, 42px);
+            @include button(22px, 11px);
+        }
+    }
+    
+    @media (min-width: $smartphone) and (max-width: $tablet) {
+        @include size(100%, 85px);
+
+        img {   
+            @include size(95%, 49px);
+            margin-left: 24px;
+        }
+  
+        button[type="button"] {
+            @include size(96%, 44px);
+            @include button(24px, 12px);
+        }
+    }
+
+    @media (min-width: $tablet) and (max-width: $notebook) {
+        @include size(100%, 90px);
+
+        img {   
+            @include size(100%, 51px);
+            margin-left: 26px;
+        }
+  
+        button[type="button"] {
+            @include size(99%, 46px);
+            @include button(26px, 14px);
+        }
+    }
+
+    
+    @media (min-width: $notebook) and (max-width: $desktop) {
+        @include size(100%, 95px);
+
+        img {   
+            @include size(100%, 53px);
+            margin-left: 28px;
+        }
+  
+        button[type="button"] {
+            @include size(100%, 48px);
+            @include button(28px, 16px);
+        }
+    }
+
+    
+    @media (min-width: $desktop) {
+        @include size(100%, 100px);
+
+        img {   
+            @include size(100%, 55px);
+            margin-left: 30px;
+        }
+  
+        button[type="button"] {
+            @include size(100%, 50px);
+            @include button(30px, 18px);
+        }
+    }
+}
