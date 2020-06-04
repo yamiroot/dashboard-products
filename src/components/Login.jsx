@@ -57,25 +57,27 @@ const Login = () => {
     };
 
     return (
-        <div data-testid="view-login">
+        <div id="Login">
             <section className="Form">
-                <img src={ImgLogo} alt="Logo de Dashboard Products" />
+                <picture><img src={ImgLogo} alt="Logo de Dashboard Products" /></picture>  
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Email:</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={email} onChange={(event) => setEmail(event.target.value)}  />
-                        <p id="emailHelp" ><small className="form-text text-muted">{emailText}</small></p>
+                        <p id="emailHelp" className="text-center"><small className="form-text text-muted">{emailText}</small></p>
                     </div>
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Contraseña:</label>
                         <input type="password" className="form-control" id="exampleInputPassword1" value={password} onChange={(event) => setPassword(event.target.value)} />
-                        <p id="passwordHelp"><small className="form-text text-muted">{passwordText}</small></p>
+                        <p id="passwordHelp" className="text-center"><small className="form-text text-muted">{passwordText}</small></p>
                     </div>
                     <div className="form-group form-check">
                         <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                         <label className="form-check-label" htmlFor="exampleCheck1">Recordar contraseña</label>
                     </div>
-                    <button type="submit" className="btn btn-primary">Iniciar sesión</button>
+                    <div className="div-button-login">
+                    <button type="submit" className="btn btn-lg">Iniciar sesión</button>
+                    </div>
                 </form>
             </section>
         </div>

@@ -1,2 +1,194 @@
 @import '_measures';
 
+
+@mixin paddingMargin( $padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+#Login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #6983aa;
+    font-family: 'Dekko', cursive;
+    font-family: 'Neucha', cursive;
+
+    @include size(100%, 100vh);
+
+
+    section {
+        border-radius: 10px;
+        background: #f4f4f4;
+
+        picture {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        button[type="submit"]{
+            background: #8566aa;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background: #ad6989;
+        }
+    }
+
+    @media (max-width: $blackberry) {
+        font-size: 12px;
+
+        section {
+            @include size(85%, auto);
+            @include paddingMargin(15px 5% 30px 5%, 0);
+
+            img {
+                @include size(70%, auto);
+                @include paddingMargin(0, 15px);
+            }
+
+            .div-button-login {
+                @include size(100%, auto);
+                display: flex;
+                justify-content: center;
+
+                button[type="submit"]{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    @media (min-width: $blackberry) and (max-width: $smartphone) {
+        font-size: 13px;
+
+        section {
+            @include size(80%, auto);
+            @include paddingMargin(20px 10% 35px 10%, 0);
+
+            img {
+                @include size(70%, auto);
+                @include paddingMargin(0, 15px);
+            }
+
+            .div-button-login {
+                @include size(100%, auto);
+                display: flex;
+                justify-content: center;
+
+                button[type="submit"]{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $smartphone) and (max-width: $tablet) {
+        font-size: 14px;
+
+        section {
+            @include size(60%, auto);
+            @include paddingMargin(25px 10% 40px 10%, 0);
+
+            img {
+                @include size(70%, auto);
+                @include paddingMargin(0, 15px);
+            }
+
+            .div-button-login {
+                @include size(100%, auto);
+                display: flex;
+                justify-content: center;
+
+                button[type="submit"]{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $tablet) and (max-width: $notebook) {
+        font-size: 15px;
+
+        section {
+            @include size(50%, auto);
+            @include paddingMargin(30px 10% 45px 10%, 0);
+
+            img {
+                @include size(70%, auto);
+                @include paddingMargin(0, 15px);
+            }
+
+            .div-button-login {
+                @include size(100%, auto);
+                display: flex;
+                justify-content: center;
+
+                button[type="submit"]{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $notebook) and (max-width: $desktop) {
+        font-size: 16px;
+
+        section {
+            @include size(40%, auto);
+            @include paddingMargin(35px 8% 50px 8%, 0);
+
+            img {
+                @include size(60%, auto);
+                @include paddingMargin(0, 15px);
+            }
+
+            .div-button-login {
+                @include size(100%, auto);
+                display: flex;
+                justify-content: center;
+
+                button[type="submit"]{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+
+        section {
+            @include size(35%, auto);
+            @include paddingMargin(40px 5% 55px 5%, 0);
+
+            img {
+                @include size(60%, auto);
+                @include paddingMargin(0, 15px);
+            }
+
+            .div-button-login {
+                @include size(100%, auto);
+                display: flex;
+                justify-content: center;
+
+                button[type="submit"]{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

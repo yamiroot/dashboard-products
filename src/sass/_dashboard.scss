@@ -19,192 +19,194 @@
     font-size: $size;
 }
 
+#view-dashboard { 
 
-.Dashboard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #f4f4f4;
-
-    #div-total-products {
+    .Dashboard{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: baseline;
-        @include size(100%, auto); 
-
-        .button-add {
-            background: #6983aa;
-        }
-    }
-
-    section {
-        @include size(100%, auto); 
-
-        img {
-            border-radius: 5px;
-        }
-    }
-
-    @media (max-width: $blackberry) {
-        @include paddingMargin(5px, 0);
-
-        h1 {
-            @include text(18px);
-            margin: 20px auto 20px auto;
-        }
-
-        #div-total-products {
-            @include text(12px);
-
-            .button-add {
-                @include paddingMargin(3px, 0);
-                @include text(12px);
-            }
-        }
-
-        section {
-            @include paddingMargin(20px 5px 20px 5px, 0);
-            @include text(11px);
-
-            img{
-                @include size(15%, auto); 
-            }
-        }
-    }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f4f4f4;
     
-    @media (min-width: $blackberry) and (max-width: $smartphone) {
-        @include paddingMargin(6px, 0);
-
-        h1 {
-            @include text(20px);
-            margin: 22px auto 22px auto;
-        }
-
         #div-total-products {
-            @include text(14px);
-
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+            width: 100%;
+    
             .button-add {
-                @include paddingMargin(4px, 0);
-                @include text(14px);
+                background: #6983aa;
             }
         }
-
+    
         section {
-            @include paddingMargin(22px 7px 22px 7px, 0);
-            @include text(12px);
-
-            img{
-                @include size(12%, auto); 
+            @include size(100%, auto); 
+    
+            img {
+                border-radius: 5px;
             }
         }
-    }
-
-    @media (min-width: $smartphone) and (max-width: $tablet) {
-        @include paddingMargin(6px, 0);
-
-        h1 {
-            @include text(22px);
-            margin: 25px auto 25px auto;
-        }
-
-        #div-total-products {
-            @include text(16px);
-
-            .button-add {
-                @include paddingMargin(4px, 0);
-                @include text(16px);
-            }
-        }
-
-        section {
-            @include paddingMargin(24px 15px 24px 15px, 0);
-            @include text(13px);
-
-            img{
-                @include size(10%, auto); 
-            }
-        }
-    }
-
-    @media (min-width: $tablet) and (max-width: $notebook) {
-        @include paddingMargin(7px, 0);
-
-        h1 {
-            @include text(25px);
-            margin: 30px auto 30px auto;
-        }
-
-        #div-total-products {
-            @include text(18px);
-
-            .button-add {
-                @include paddingMargin(5px, 0);
+    
+        @media (max-width: $blackberry) {
+            @include paddingMargin(5px, 0);
+    
+            h1 {
                 @include text(18px);
+                margin: 20px auto 20px auto;
+            }
+    
+            #div-total-products {
+                @include text(12px);
+    
+                .button-add {
+                    @include paddingMargin(3px, 0);
+                    @include text(12px);
+                }
+            }
+    
+            section {
+                @include paddingMargin(20px 5px 20px 5px, 0);
+                @include text(11px);
+    
+                img{
+                    @include size(15%, auto); 
+                }
             }
         }
-
-        section {
-            @include paddingMargin(28px 20px 28px 20px, 0);
-            @include text(14px);
-
-            img{
-                @include size(6%, auto); 
-            }
-        }
-    }
-
-    @media (min-width: $notebook) and (max-width: $desktop) {
-        @include paddingMargin(7px, 0);
-
-        h1 {
-            @include text(30px);
-            margin: 35px auto 35px auto;
-        }
-
-        #div-total-products {
-            @include text(20px);
-
-            .button-add {
-                @include paddingMargin(6px, 0);
+        
+        @media (min-width: $blackberry) and (max-width: $smartphone) {
+            @include paddingMargin(6px, 0);
+    
+            h1 {
                 @include text(20px);
+                margin: 22px auto 22px auto;
+            }
+    
+            #div-total-products {
+                @include text(14px);
+    
+                .button-add {
+                    @include paddingMargin(4px, 0);
+                    @include text(14px);
+                }
+            }
+    
+            section {
+                @include paddingMargin(22px 7px 22px 7px, 0);
+                @include text(12px);
+    
+                img{
+                    @include size(12%, auto); 
+                }
             }
         }
-
-        section {
-            @include paddingMargin(30px 30px 30px 30px, 0);
-            @include text(15px);
-
-            img{
-                @include size(5%, auto); 
-            }
-        }
-    }
-
-    @media (min-width: $desktop) {
-        @include paddingMargin(7px, 0);
-
-        h1 {
-            @include text(35px);
-            margin: 40px auto 40px auto;
-        }
-
-        #div-total-products {
-            @include text(22px);
-
-            .button-add {
-                @include paddingMargin(7px, 0);
+    
+        @media (min-width: $smartphone) and (max-width: $tablet) {
+            @include paddingMargin(6px, 0);
+    
+            h1 {
                 @include text(22px);
+                margin: 25px auto 25px auto;
+            }
+    
+            #div-total-products {
+                @include text(16px);
+    
+                .button-add {
+                    @include paddingMargin(4px, 0);
+                    @include text(16px);
+                }
+            }
+    
+            section {
+                @include paddingMargin(24px 15px 24px 15px, 0);
+                @include text(13px);
+    
+                img{
+                    @include size(10%, auto); 
+                }
             }
         }
-
-        section {
-            @include paddingMargin(35px 45px 35px 45px, 0);
-            @include text(15px);
-
-            img{
-                @include size(5%, auto); 
+    
+        @media (min-width: $tablet) and (max-width: $notebook) {
+            @include paddingMargin(7px, 0);
+    
+            h1 {
+                @include text(25px);
+                margin: 30px auto 30px auto;
+            }
+    
+            #div-total-products {
+                @include text(18px);
+    
+                .button-add {
+                    @include paddingMargin(5px, 0);
+                    @include text(18px);
+                }
+            }
+    
+            section {
+                @include paddingMargin(28px 20px 28px 20px, 0);
+                @include text(14px);
+    
+                img{
+                    @include size(6%, auto); 
+                }
+            }
+        }
+    
+        @media (min-width: $notebook) and (max-width: $desktop) {
+            @include paddingMargin(7px, 0);
+    
+            h1 {
+                @include text(30px);
+                margin: 35px auto 35px auto;
+            }
+    
+            #div-total-products {
+                @include text(20px);
+    
+                .button-add {
+                    @include paddingMargin(6px, 0);
+                    @include text(20px);
+                }
+            }
+    
+            section {
+                @include paddingMargin(30px 30px 30px 30px, 0);
+                @include text(15px);
+    
+                img{
+                    @include size(5%, auto); 
+                }
+            }
+        }
+    
+        @media (min-width: $desktop) {
+            @include paddingMargin(7px, 0);
+    
+            h1 {
+                @include text(35px);
+                margin: 40px auto 40px auto;
+            }
+    
+            #div-total-products {
+                @include text(22px);
+    
+                .button-add {
+                    @include paddingMargin(7px, 0);
+                    @include text(22px);
+                }
+            }
+    
+            section {
+                @include paddingMargin(35px 45px 35px 45px, 0);
+                @include text(15px);
+    
+                img{
+                    @include size(5%, auto); 
+                }
             }
         }
     }
